@@ -35,6 +35,7 @@ public class PlayerInventory : MonoBehaviour
 
     public void AddItem(string itemId)
     {
+        Debug.Log($"{itemId} 습득");
         Inven.Add(itemId);
         if(Inventory.TryGetValue(itemId, out int count))
         {
